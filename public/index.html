@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>今日似合う花</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <h1>🌼 今日似合う花</h1>
+
+    <label>用途</label>
+    <select id="purpose">
+      <option>母の日</option>
+      <option>父の日</option>
+      <option>誕生日</option>
+      <option>卒業式</option>
+      <option>成人式</option>
+    </select>
+
+    <label>贈る相手</label>
+    <select id="recipient">
+      <option>母</option>
+      <option>父</option>
+      <option>恋人</option>
+      <option>友人</option>
+      <option>先生</option>
+    </select>
+
+    <label>色</label>
+    <select id="color">
+      <option>ピンク</option>
+      <option>赤</option>
+      <option>白</option>
+      <option>黄色</option>
+      <option>紫</option>
+    </select>
+
+    <button onclick="generate()">花を選ぶ</button>
+
+    <div class="result">
+      <p id="flower"></p>
+      <p id="language"></p>
+      <p id="reason"></p>
+    </div>
+  </div>
+
+  <div class="right" id="canvas-area"></div>
+</div>
+
+<script src="script.js"></script>
+<script src="sketch.js"></script>
+</body>
+</html>
